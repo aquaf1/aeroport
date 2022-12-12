@@ -1,0 +1,188 @@
+﻿<Window x:Class="Аэропорт.Raspisanie"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Аэропорт"
+        mc:Ignorable="d"
+        Title="Raspisanie" Height="450" Width="800">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="original.jpg"/>
+        </Grid.Background>
+
+        <TextBlock Text="Информационная система аэропорта" FontSize="30" FontWeight="Bold" Foreground="White" Margin="0,349,225,10" TextAlignment="Center"/>
+
+        <Button Content="Закрыть" HorizontalAlignment="Left" Height="60" Margin="572,349,0,0" VerticalAlignment="Top" Width="220" Click="Button_Click"/>
+
+        <FlowDocumentReader Margin="-10,-10,10,0">
+            <FlowDocument>
+
+                <Table CellSpacing="5">
+
+                    <Table.Columns>
+                        <TableColumn/>
+                        <TableColumn/>
+                        <TableColumn/>
+                        <TableColumn/>
+                    </Table.Columns>
+
+                    <TableRowGroup>
+
+                        <!-- Title row for the table. -->
+                        <TableRow Background="SkyBlue">
+                            <TableCell ColumnSpan="4" TextAlignment="Center">
+                                <Paragraph FontSize="24pt" FontWeight="Bold">Расписание</Paragraph>
+                            </TableCell>
+                        </TableRow>
+
+                        <!-- Header row for the table. -->
+                        <TableRow Background="LightGoldenrodYellow">
+                            <TableCell>
+                                <Paragraph FontSize="14pt" FontWeight="Bold">Код рейса</Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph FontSize="14pt" FontWeight="Bold">День вылета</Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph FontSize="14pt" FontWeight="Bold">Время вылета</Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph FontSize="14pt" FontWeight="Bold">Стоимость билета</Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph FontSize="14pt" FontWeight="Bold">Номер самолета</Paragraph>
+                            </TableCell>
+                        </TableRow>
+
+                        <!-- Sub-title row for the inner planets. -->
+                        
+
+                        <!-- Four data rows for the inner planets. -->
+                        <TableRow Background="lightgray">
+                            <TableCell>
+                                <Paragraph>01</Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>15.12.2022</Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>10:00</Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>10000р</Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>23</Paragraph>
+                            </TableCell>
+                        </TableRow>
+                        <TableRow Background="lightgray">
+                            <TableCell>
+                                <Paragraph></Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph></Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph></Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph></Paragraph>
+                            </TableCell>
+                        </TableRow>
+                        <TableRow Background="lightgray">
+                            <TableCell>
+                                <Paragraph></Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph></Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph></Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph></Paragraph>
+                            </TableCell>
+                        </TableRow>
+                        <TableRow Background="lightgray">
+                            <TableCell>
+                                <Paragraph></Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph></Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph></Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph></Paragraph>
+                            </TableCell>
+                        </TableRow>
+
+
+                        <TableRow Background="lightgray">
+                            <TableCell>
+                                <Paragraph></Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph></Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph></Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph></Paragraph>
+                            </TableCell>
+                        </TableRow>
+                        <TableRow Background="lightgray">
+                            <TableCell>
+                                <Paragraph></Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph></Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph></Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph></Paragraph>
+                            </TableCell>
+                        </TableRow>
+                        <TableRow Background="lightgray">
+                            <TableCell>
+                                <Paragraph></Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph></Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph></Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph></Paragraph>
+                            </TableCell>
+                        </TableRow>
+                        <TableRow Background="lightgray">
+                            <TableCell>
+                                <Paragraph></Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph></Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph></Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph></Paragraph>
+                            </TableCell>
+                        </TableRow>
+
+                       
+                        
+
+                    </TableRowGroup>
+                </Table>
+            </FlowDocument>
+        </FlowDocumentReader>
+    </Grid>
+</Window>
